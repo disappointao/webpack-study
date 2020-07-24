@@ -126,7 +126,21 @@ new miniCssExtractPlugin({
    * 可以在入口函数的js中通过import方式进行引入
    * 与@babel/preset-env结合使用时通过配置useBuiltIns与corejs来实现按需打包，且不用手动引入
       
+### *html与js压缩*
 
+* html的压缩需要在使用html-webpack-plugin时进行配置
+````
+new HtmlWebpackPlugin({
+            template: "./src/index.html",
+            minify:{
+                //移除空格
+                collapseWhitespace:true,
+                //删除注释
+                removeComments:true
+            }
+        })
+````
+* js的压缩仅需要将mode改为生产模式 `mode='production'`
 
 
 
