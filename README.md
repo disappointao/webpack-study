@@ -67,5 +67,32 @@ new miniCssExtractPlugin({
   ]　　
 ````
 
+---
+### *css压缩*
+使用插件 optimize-css-assets-webpack-plugin
+
+---
+### *eslint语法检查*
+* 安装 eslint eslint-loader eslint-config-airbnb-base(采用airbnb-base规范) 
+ eslint-plugin-import eslint
+ 
+* 在loader中对eslint进行配置，注意设置检查目录限制
+````
+{
+    test: /\.js$/,
+    //排除node_modules中的相关js,
+    //include: [resolve(__dirname, 'src')]或者使用include进行指定检查目录
+    exclude: /node_modules/,
+    loader: 'eslint-loader',
+    options: {
+        // 自动修复eslint的错误
+        fix: true
+    } 
+}
+````
+* 配置eslint规则  
+  * 通过在根目录新建.eslintrc进行配置
+  * 在package.json中配置eslintConfig选项
+
 
 
