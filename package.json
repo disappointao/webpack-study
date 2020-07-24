@@ -50,5 +50,8 @@
   ],
   "dependencies": {
     "@babel/polyfill": "^7.10.4"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base"
   }
 }
