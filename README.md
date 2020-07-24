@@ -95,4 +95,41 @@ new miniCssExtractPlugin({
   * 在package.json中配置eslintConfig选项
 
 
+### *js兼容性设置*
+安装babel-loader @babel/core @babel/preset-env @babel/polyfill core-js
+* 对babel进行配置，可在根项目路径上建立.babelrc文件进行配置,也可以在loader中进行配置
+````
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "usage",
+        "corejs": "version3",
+        "targets": {
+          "chrome": "60",
+          "firefox": "60",
+          "ie": "9",
+          "safari": "10",
+          "edge": "17"
+        }
+      }
+    ]
+  ]
+}
+.babelrc
+````
+
+@babel/preset-env用于转换基本的js语法，如箭头函数等。但不能识别promise等更高级的语法，此时需要试用库@babel/profill。
+
+这个库将会模拟一个完全的 ES2015+ 的环境。这意味着你可以使用 新的内置语法 比如 promise 或者 WeakMap， 静态方法比如Array.from 或 Object.assign, 实例方法 比如 Array.prototype.includes 和 generator 函数。
+   * 可以在入口函数的js中通过import方式进行引入
+   * 与@babel/preset-env结合使用时通过配置useBuiltIns与corejs来实现按需打包，且不用手动引入
+      
+
+
+
+
+
+
 
