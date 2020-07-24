@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/disappointao/webpack-study#readme",
   "devDependencies": {
+    "autoprefixer": "^9.8.5",
     "css-loader": "^3.6.0",
     "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
@@ -31,5 +32,15 @@
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "browserslist": {
+    "development": [
+      "last 1 version"
+    ],
+    "production": [
+      "> 1%",
+      "maintained node version",
+      "not dead"
+    ]
   }
 }
