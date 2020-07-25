@@ -4,7 +4,7 @@ import '../css/index.less';
 import '../css/iconfont.css';
 
 const hello = () => {
-  console.log('hello webpack');
+  console.log('hello webpack')();
 };
 new Promise((resolve, reject) => {
   if (1) {

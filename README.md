@@ -94,7 +94,7 @@ new miniCssExtractPlugin({
   * 通过在根目录新建.eslintrc进行配置
   * 在package.json中配置eslintConfig选项
 
-
+---
 ### *js兼容性设置*
 安装babel-loader @babel/core @babel/preset-env @babel/polyfill core-js
 * 对babel进行配置，可在根项目路径上建立.babelrc文件进行配置,也可以在loader中进行配置
@@ -126,6 +126,7 @@ new miniCssExtractPlugin({
    * 可以在入口函数的js中通过import方式进行引入
    * 与@babel/preset-env结合使用时通过配置useBuiltIns与corejs来实现按需打包，且不用手动引入
       
+---
 ### *html与js压缩*
 
 * html的压缩需要在使用html-webpack-plugin时进行配置
@@ -141,6 +142,50 @@ new HtmlWebpackPlugin({
         })
 ````
 * js的压缩仅需要将mode改为生产模式 `mode='production'`
+---
+### *webpack优化*
+---
+#### *开发环境优化*
+
+* HMR（热更新）
+
+优化打包构建速度，一个模块发生变化，只会重新打包这一个模块（而不是打包所有模块） 
+
+
+    样式文件：可以使用HMR功能：因为style-loader内部实现了
+
+    js文件：默认不能使用HMR功能 --> 需要修改js代码，添加支持HMR功能的代码
+        
+    注意：HMR功能对js的处理，只能处理非入口js文件的其他文件。
+
+    html文件: 默认不能使用HMR功能.同时会导致问题：html文件不能热更新了~ （不用做HMR功能）
+
+    解决：修改entry入口，将html文件引入
+    
+* source-map （优化代码调试）
+
+devtool:'cheap-source-map', mode需设置为development
+---
+#### *生产环境优化*
+
+* 优化打包构建速度
+  * oneOf
+  
+  loader只会匹配一个，不会有两个配置处理同一种类型文件
+  
+  * babel缓存
+  
+  在babel的loader配置中配置cacheDirectory选项
+  
+  * 多进程打包
+  * externals
+  * dll
+* 优化代码运行的性能
+  * 缓存(hash-chunkhash-contenthash)
+  * tree shaking
+  * code split
+  * 懒加载/预加载
+  * pwa
 
 
 

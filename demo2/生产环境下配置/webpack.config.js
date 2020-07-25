@@ -65,7 +65,8 @@ module.exports = {
                 corejs:{version:3}
               }
             ]
-          ]
+          ],
+          cacheDirectory:true
         },
       },
       {
@@ -89,5 +90,12 @@ module.exports = {
     }),
     new optimizeCssAssetsWebpackPlugin()
   ],
-  mode:'production',
+  devServer:{
+    open:true,
+    port:3000,
+    contentBase:resolve(__dirname,'build'),
+    hot:true
+  },
+  mode:'development',
+  devtool: 'cheap-source-map'
 };
