@@ -1,0 +1,25 @@
+// import "css-loader!../css/index.css";
+import "../css/index.css";
+import "../css/a.less";
+import "../css/b.scss";
+import sun from "../assets/img/sun.png"
+
+function component() {
+  const element = document.createElement("div");
+
+  element.innerHTML = ["Hello", "Webpack"].join(" ");
+  element.className = "content a b";
+
+  const img = new Image()
+  img.src = sun
+  element.appendChild(img)
+
+  // 创建一个i元素, 设置一个字体
+  const iEl = document.createElement("i");
+  iEl.className = "iconfont icon-ashbin why_icon";
+  element.appendChild(iEl);
+
+  return element;
+}
+
+document.body.appendChild(component());

@@ -1,0 +1,13 @@
+@import "../assets/font/iconfont.css";
+.content{
+    color: red;
+}
+#div1{
+    background-image: url("../assets/img/sun2.jpg");
+    height: 300px;
+}
+.why_icon {
+    display: inline-block;
+    font-size: 50px;
+    color: red;
+}
