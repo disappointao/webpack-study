@@ -4,6 +4,7 @@
 }
 #div1{
     background-image: url("../assets/img/sun2.jpg");
+    background-repeat: no-repeat;
     height: 300px;
 }
 .why_icon {

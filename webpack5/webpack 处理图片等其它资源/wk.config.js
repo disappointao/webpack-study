@@ -1,6 +1,6 @@
 const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
-
+const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 module.exports = {
   entry: "./src/main.js",
   output: {
@@ -62,20 +62,41 @@ module.exports = {
               name:"font/[name].[ext]"
             }
           }
-        ]
+        ],
+        //或者使用内置模块
+        // type: "asset/resource", file-loader的效果
+        // type: "asset/inline", url-loader
+        // type: 'asset/resource',
+        // generator: {
+        //   filename: "font/[name][hash:6][ext]"
+        // }
       },
       //url-loader能将符合要求的图片转换为base64的形式
+      // {
+      //   test:/\.(png|jpe?g|gif|svg)$/,
+      //   use:[
+      //     {
+      //       loader: 'url-loader',
+      //       options: {
+      //         limit:10000000,
+      //         name:"img/[name][hash:6].[ext]"
+      //       }
+      //     }
+      //   ]
+      // },
+      //
+      //使用webpack5中提供的模块进行处理
       {
         test:/\.(png|jpe?g|gif|svg)$/,
-        use:[
-          {
-            loader: 'url-loader',
-            options: {
-              limit:10*1024,
-              name:"img/[name][hash:6].[ext]"
-            }
+        type:"asset",
+        generator:{
+          filename: 'img/[name][hash:6][ext]'
+        },
+        parser: {
+          dataUrlCondition: {
+            maxSize: 100 * 1024
           }
-        ]
+        }
       }
     ]
   },
@@ -83,6 +104,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./public/index.html",
       title: "处理CSS"
-    })
+    }),
+    new CleanWebpackPlugin()
   ]
 }

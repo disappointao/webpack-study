@@ -59,6 +59,14 @@
   "resolved" "https://registry.nlark.com/@types/estree/download/@types/estree-0.0.48.tgz"
   "version" "0.0.48"
 
+"@types/glob@^7.1.1":
+  "integrity" "sha1-6lniHS7lxReRTLS8jkFTuZ5WZnI="
+  "resolved" "https://registry.nlark.com/@types/glob/download/@types/glob-7.1.4.tgz?cache=0&sync_timestamp=1625606922958&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fglob%2Fdownload%2F%40types%2Fglob-7.1.4.tgz"
+  "version" "7.1.4"
+  dependencies:
+    "@types/minimatch" "*"
+    "@types/node" "*"
+
 "@types/html-minifier-terser@^5.0.0":
   "integrity" "sha1-PJ7pgPGhDWAhrmYyyj55yi7E+1A="
   "resolved" "https://registry.nlark.com/@types/html-minifier-terser/download/@types/html-minifier-terser-5.1.1.tgz"
@@ -68,6 +76,11 @@
   "integrity" "sha1-mKmTUWyFnrDVxMjwmDF6nqaNua0="
   "resolved" "https://registry.nlark.com/@types/json-schema/download/@types/json-schema-7.0.7.tgz"
   "version" "7.0.7"
+
+"@types/minimatch@*":
+  "integrity" "sha1-EAHMXmo3BLg8I2An538vWOoBD0A="
+  "resolved" "https://registry.nlark.com/@types/minimatch/download/@types/minimatch-3.0.5.tgz?cache=0&sync_timestamp=1625616455794&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fminimatch%2Fdownload%2F%40types%2Fminimatch-3.0.5.tgz"
+  "version" "3.0.5"
 
 "@types/node@*":
   "integrity" "sha1-BnpsSdx6XCQSpQVijiaQKulnv28="
@@ -267,6 +280,18 @@
     "normalize-path" "^3.0.0"
     "picomatch" "^2.0.4"
 
+"array-union@^1.0.1":
+  "integrity" "sha1-mjRBDk9OPaI96jdb5b5w8kd47Dk="
+  "resolved" "https://registry.npm.taobao.org/array-union/download/array-union-1.0.2.tgz"
+  "version" "1.0.2"
+  dependencies:
+    "array-uniq" "^1.0.1"
+
+"array-uniq@^1.0.1":
+  "integrity" "sha1-r2rId6Jcx/dOBYiUdThY39sk/bY="
+  "resolved" "https://registry.nlark.com/array-uniq/download/array-uniq-1.0.3.tgz?cache=0&sync_timestamp=1620042045402&other_urls=https%3A%2F%2Fregistry.nlark.com%2Farray-uniq%2Fdownload%2Farray-uniq-1.0.3.tgz"
+  "version" "1.0.3"
+
 "autoprefixer@^10.3.1":
   "integrity" "sha1-lUIUgh06oGaSQGxqCp6dQB6vvtI="
   "resolved" "https://registry.nlark.com/autoprefixer/download/autoprefixer-10.3.1.tgz"
@@ -311,6 +336,14 @@
   "integrity" "sha1-aN/1++YMUes3cl6p4+0xDcwed24="
   "resolved" "https://registry.npm.taobao.org/boolbase/download/boolbase-1.0.0.tgz"
   "version" "1.0.0"
+
+"brace-expansion@^1.1.7":
+  "integrity" "sha1-PH/L9SnYcibz0vUrlm/1Jx60Qd0="
+  "resolved" "https://registry.npm.taobao.org/brace-expansion/download/brace-expansion-1.1.11.tgz"
+  "version" "1.1.11"
+  dependencies:
+    "balanced-match" "^1.0.0"
+    "concat-map" "0.0.1"
 
 "braces@~3.0.2":
   "integrity" "sha1-NFThpGLujVmeI23zNs2epPiv4Qc="
@@ -394,6 +427,13 @@
   dependencies:
     "source-map" "~0.6.0"
 
+"clean-webpack-plugin@*":
+  "integrity" "sha1-Ku9I3+dWU2DRKPXKoJBAl9lp0FM="
+  "resolved" "https://registry.nlark.com/clean-webpack-plugin/download/clean-webpack-plugin-4.0.0-alpha.0.tgz"
+  "version" "4.0.0-alpha.0"
+  dependencies:
+    "del" "^4.1.1"
+
 "clone-deep@^4.0.1":
   "integrity" "sha1-wZ/Zvbv4WUK0/ZechNz31fB8I4c="
   "resolved" "https://registry.nlark.com/clone-deep/download/clone-deep-4.0.1.tgz"
@@ -434,6 +474,11 @@
   "integrity" "sha1-o2y1fQtQHOEI5NIFWaFQo5HZerc="
   "resolved" "https://registry.nlark.com/commander/download/commander-7.2.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcommander%2Fdownload%2Fcommander-7.2.0.tgz"
   "version" "7.2.0"
+
+"concat-map@0.0.1":
+  "integrity" "sha1-2Klr13/Wjfd5OnMDajug1UBdR3s="
+  "resolved" "https://registry.npm.taobao.org/concat-map/download/concat-map-0.0.1.tgz"
+  "version" "0.0.1"
 
 "copy-anything@^2.0.1":
   "integrity" "sha1-hCQHugJGaw34RIGbvjuuu+XUXYc="
@@ -537,6 +582,19 @@
   "version" "3.2.7"
   dependencies:
     "ms" "^2.1.1"
+
+"del@^4.1.1":
+  "integrity" "sha1-no8RciLqRKMf86FWwEm5kFKp8LQ="
+  "resolved" "https://registry.npm.taobao.org/del/download/del-4.1.1.tgz"
+  "version" "4.1.1"
+  dependencies:
+    "@types/glob" "^7.1.1"
+    "globby" "^6.1.0"
+    "is-path-cwd" "^2.0.0"
+    "is-path-in-cwd" "^2.0.0"
+    "p-map" "^2.0.0"
+    "pify" "^4.0.1"
+    "rimraf" "^2.6.3"
 
 "dom-converter@^0.2.0":
   "integrity" "sha1-ZyGp2u4uKTaClVtq/kFncWJ7t2g="
@@ -733,6 +791,11 @@
   "resolved" "https://registry.nlark.com/fraction.js/download/fraction.js-4.1.1.tgz"
   "version" "4.1.1"
 
+"fs.realpath@^1.0.0":
+  "integrity" "sha1-FQStJSMVjKpA20onh8sBQRmU6k8="
+  "resolved" "https://registry.npm.taobao.org/fs.realpath/download/fs.realpath-1.0.0.tgz"
+  "version" "1.0.0"
+
 "fsevents@~2.3.2":
   "integrity" "sha1-ilJveLj99GI7cJ4Ll1xSwkwC/Ro="
   "resolved" "https://registry.npm.taobao.org/fsevents/download/fsevents-2.3.2.tgz?cache=0&sync_timestamp=1612536422255&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffsevents%2Fdownload%2Ffsevents-2.3.2.tgz"
@@ -759,6 +822,29 @@
   "integrity" "sha1-x1KXCHyFG5pXi9IX3VmpL1n+VG4="
   "resolved" "https://registry.nlark.com/glob-to-regexp/download/glob-to-regexp-0.4.1.tgz"
   "version" "0.4.1"
+
+"glob@^7.0.3", "glob@^7.1.3":
+  "integrity" "sha1-Oxk+kjPwHULQs/eClLvutBj5SpA="
+  "resolved" "https://registry.nlark.com/glob/download/glob-7.1.7.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fglob%2Fdownload%2Fglob-7.1.7.tgz"
+  "version" "7.1.7"
+  dependencies:
+    "fs.realpath" "^1.0.0"
+    "inflight" "^1.0.4"
+    "inherits" "2"
+    "minimatch" "^3.0.4"
+    "once" "^1.3.0"
+    "path-is-absolute" "^1.0.0"
+
+"globby@^6.1.0":
+  "integrity" "sha1-9abXDoOV4hyFj7BInWTfAkJNUGw="
+  "resolved" "https://registry.nlark.com/globby/download/globby-6.1.0.tgz?cache=0&sync_timestamp=1629147788553&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fglobby%2Fdownload%2Fglobby-6.1.0.tgz"
+  "version" "6.1.0"
+  dependencies:
+    "array-union" "^1.0.1"
+    "glob" "^7.0.3"
+    "object-assign" "^4.0.1"
+    "pify" "^2.0.0"
+    "pinkie-promise" "^2.0.0"
 
 "graceful-fs@^4.1.2", "graceful-fs@^4.2.4":
   "integrity" "sha1-/wQLKwhTsjw9MQJ1I3BvGIXXa+4="
@@ -864,6 +950,19 @@
   "resolved" "https://registry.npm.taobao.org/indexes-of/download/indexes-of-1.0.1.tgz"
   "version" "1.0.1"
 
+"inflight@^1.0.4":
+  "integrity" "sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk="
+  "resolved" "https://registry.npm.taobao.org/inflight/download/inflight-1.0.6.tgz"
+  "version" "1.0.6"
+  dependencies:
+    "once" "^1.3.0"
+    "wrappy" "1"
+
+"inherits@2":
+  "integrity" "sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w="
+  "resolved" "https://registry.npm.taobao.org/inherits/download/inherits-2.0.4.tgz"
+  "version" "2.0.4"
+
 "interpret@^2.2.0":
   "integrity" "sha1-GnigtZZcQKVBbQB61vUK0nxBffk="
   "resolved" "https://registry.npm.taobao.org/interpret/download/interpret-2.2.0.tgz"
@@ -904,6 +1003,25 @@
   "integrity" "sha1-dTU0W4lnNNX4DE0GxQlVUnoU8Ss="
   "resolved" "https://registry.npm.taobao.org/is-number/download/is-number-7.0.0.tgz"
   "version" "7.0.0"
+
+"is-path-cwd@^2.0.0":
+  "integrity" "sha1-Z9Q7gmZKe1GR/ZEZEn6zAASKn9s="
+  "resolved" "https://registry.nlark.com/is-path-cwd/download/is-path-cwd-2.2.0.tgz"
+  "version" "2.2.0"
+
+"is-path-in-cwd@^2.0.0":
+  "integrity" "sha1-v+Lcomxp85cmWkAJljYCk1oFOss="
+  "resolved" "https://registry.nlark.com/is-path-in-cwd/download/is-path-in-cwd-2.1.0.tgz?cache=0&sync_timestamp=1620047110449&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fis-path-in-cwd%2Fdownload%2Fis-path-in-cwd-2.1.0.tgz"
+  "version" "2.1.0"
+  dependencies:
+    "is-path-inside" "^2.1.0"
+
+"is-path-inside@^2.1.0":
+  "integrity" "sha1-fJgQWH1lmkDSe8201WFuqwWUlLI="
+  "resolved" "https://registry.nlark.com/is-path-inside/download/is-path-inside-2.1.0.tgz?cache=0&sync_timestamp=1620046845369&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fis-path-inside%2Fdownload%2Fis-path-inside-2.1.0.tgz"
+  "version" "2.1.0"
+  dependencies:
+    "path-is-inside" "^1.0.2"
 
 "is-plain-object@^2.0.4":
   "integrity" "sha1-LBY7P6+xtgbZ0Xko8FwqHDjgdnc="
@@ -1082,6 +1200,13 @@
   "resolved" "https://registry.npm.taobao.org/mimic-fn/download/mimic-fn-2.1.0.tgz"
   "version" "2.1.0"
 
+"minimatch@^3.0.4":
+  "integrity" "sha1-UWbihkV/AzBgZL5Ul+jbsMPTIIM="
+  "resolved" "https://registry.npm.taobao.org/minimatch/download/minimatch-3.0.4.tgz"
+  "version" "3.0.4"
+  dependencies:
+    "brace-expansion" "^1.1.7"
+
 "minimist@^1.2.5":
   "integrity" "sha1-Z9ZgFLZqaoqqDAg8X9WN9OTpdgI="
   "resolved" "https://registry.npm.taobao.org/minimist/download/minimist-1.2.5.tgz"
@@ -1153,6 +1278,18 @@
   "resolved" "https://registry.npm.taobao.org/num2fraction/download/num2fraction-1.2.2.tgz"
   "version" "1.2.2"
 
+"object-assign@^4.0.1":
+  "integrity" "sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM="
+  "resolved" "https://registry.npm.taobao.org/object-assign/download/object-assign-4.1.1.tgz"
+  "version" "4.1.1"
+
+"once@^1.3.0":
+  "integrity" "sha1-WDsap3WWHUsROsF9nFC6753Xa9E="
+  "resolved" "https://registry.npm.taobao.org/once/download/once-1.4.0.tgz"
+  "version" "1.4.0"
+  dependencies:
+    "wrappy" "1"
+
 "onetime@^5.1.2":
   "integrity" "sha1-0Oluu1awdHbfHdnEgG5SN5hcpF4="
   "resolved" "https://registry.npm.taobao.org/onetime/download/onetime-5.1.2.tgz"
@@ -1180,6 +1317,11 @@
   "version" "4.1.0"
   dependencies:
     "p-limit" "^2.2.0"
+
+"p-map@^2.0.0":
+  "integrity" "sha1-MQko/u+cnsxltosXaTAYpmXOoXU="
+  "resolved" "https://registry.nlark.com/p-map/download/p-map-2.1.0.tgz?cache=0&sync_timestamp=1627082442645&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fp-map%2Fdownload%2Fp-map-2.1.0.tgz"
+  "version" "2.1.0"
 
 "p-try@^2.0.0":
   "integrity" "sha1-yyhoVA4xPWHeWPr741zpAE1VQOY="
@@ -1229,6 +1371,16 @@
   "resolved" "https://registry.nlark.com/path-exists/download/path-exists-4.0.0.tgz"
   "version" "4.0.0"
 
+"path-is-absolute@^1.0.0":
+  "integrity" "sha1-F0uSaHNVNP+8es5r9TpanhtcX18="
+  "resolved" "https://registry.npm.taobao.org/path-is-absolute/download/path-is-absolute-1.0.1.tgz"
+  "version" "1.0.1"
+
+"path-is-inside@^1.0.2":
+  "integrity" "sha1-NlQX3t5EQw0cEa9hAn+s8HS9/FM="
+  "resolved" "https://registry.npm.taobao.org/path-is-inside/download/path-is-inside-1.0.2.tgz"
+  "version" "1.0.2"
+
 "path-key@^3.0.0", "path-key@^3.1.0":
   "integrity" "sha1-WB9q3mWMu6ZaDTOA3ndTKVBU83U="
   "resolved" "https://registry.npm.taobao.org/path-key/download/path-key-3.1.1.tgz?cache=0&sync_timestamp=1617971695678&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpath-key%2Fdownload%2Fpath-key-3.1.1.tgz"
@@ -1249,10 +1401,27 @@
   "resolved" "https://registry.nlark.com/picomatch/download/picomatch-2.3.0.tgz"
   "version" "2.3.0"
 
+"pify@^2.0.0":
+  "integrity" "sha1-7RQaasBDqEnqWISY59yosVMw6Qw="
+  "resolved" "https://registry.npm.taobao.org/pify/download/pify-2.3.0.tgz"
+  "version" "2.3.0"
+
 "pify@^4.0.1":
   "integrity" "sha1-SyzSXFDVmHNcUCkiJP2MbfQeMjE="
   "resolved" "https://registry.npm.taobao.org/pify/download/pify-4.0.1.tgz"
   "version" "4.0.1"
+
+"pinkie-promise@^2.0.0":
+  "integrity" "sha1-ITXW36ejWMBprJsXh3YogihFD/o="
+  "resolved" "https://registry.npm.taobao.org/pinkie-promise/download/pinkie-promise-2.0.1.tgz"
+  "version" "2.0.1"
+  dependencies:
+    "pinkie" "^2.0.0"
+
+"pinkie@^2.0.0":
+  "integrity" "sha1-clVrgM+g1IqXToDnckjoDtT3+HA="
+  "resolved" "https://registry.npm.taobao.org/pinkie/download/pinkie-2.0.4.tgz"
+  "version" "2.0.4"
 
 "pkg-dir@^4.2.0":
   "integrity" "sha1-8JkTPfft5CLoHR2ESCcO6z5CYfM="
@@ -1737,6 +1906,13 @@
     "is-core-module" "^2.2.0"
     "path-parse" "^1.0.6"
 
+"rimraf@^2.6.3":
+  "integrity" "sha1-NXl/E6f9rcVmFCwp1PB8ytSD4+w="
+  "resolved" "https://registry.npm.taobao.org/rimraf/download/rimraf-2.7.1.tgz?cache=0&sync_timestamp=1593529714524&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Frimraf%2Fdownload%2Frimraf-2.7.1.tgz"
+  "version" "2.7.1"
+  dependencies:
+    "glob" "^7.1.3"
+
 "safe-buffer@^5.1.0":
   "integrity" "sha1-Hq+fqb2x/dTsdfWPnNtOa3gn7sY="
   "resolved" "https://registry.npm.taobao.org/safe-buffer/download/safe-buffer-5.2.1.tgz"
@@ -2016,7 +2192,7 @@
     "source-list-map" "^2.0.1"
     "source-map" "^0.6.1"
 
-"webpack@^4.0.0 || ^5.0.0", "webpack@^4.27.0 || ^5.0.0", "webpack@^5.0.0", "webpack@^5.1.0", "webpack@^5.20.0", "webpack@^5.42.0", "webpack@4.x.x || 5.x.x":
+"webpack@^4.0.0 || ^5.0.0", "webpack@^4.27.0 || ^5.0.0", "webpack@^5.0.0", "webpack@^5.1.0", "webpack@^5.20.0", "webpack@^5.42.0", "webpack@>=4.0.0 <6.0.0", "webpack@4.x.x || 5.x.x":
   "integrity" "sha1-OarbzoStLOv4bMX4iixT22XL3fs="
   "resolved" "https://registry.nlark.com/webpack/download/webpack-5.42.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fwebpack%2Fdownload%2Fwebpack-5.42.0.tgz"
   "version" "5.42.0"
@@ -2056,6 +2232,11 @@
   "integrity" "sha1-p30g5SAMb6qsl55LOq3Hs91/j+w="
   "resolved" "https://registry.npm.taobao.org/wildcard/download/wildcard-2.0.0.tgz"
   "version" "2.0.0"
+
+"wrappy@1":
+  "integrity" "sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8="
+  "resolved" "https://registry.nlark.com/wrappy/download/wrappy-1.0.2.tgz?cache=0&sync_timestamp=1619133505879&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fwrappy%2Fdownload%2Fwrappy-1.0.2.tgz"
+  "version" "1.0.2"
 
 "yallist@^4.0.0":
   "integrity" "sha1-m7knkNnA7/7GO+c1GeEaNQGaOnI="
