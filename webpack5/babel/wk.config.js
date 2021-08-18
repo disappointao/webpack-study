@@ -1,8 +1,12 @@
 const path = require("path")
+const { DefinePlugin } = require("webpack")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 module.exports = {
+  // entry: ["@babel/polyfill","./src/main.js"],
   entry: "./src/main.js",
+  devtool: "source-map",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "./dist")
@@ -98,14 +102,52 @@ module.exports = {
             maxSize: 100 * 1024
           }
         }
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use:[
+          {
+            loader: 'babel-loader',
+            //或单独使用配置文件进行配置 .babelrc babel.config.js
+            // options: {
+            //   presets:[
+            //     [
+            //       '@babel/preset-env',
+            //       {
+            //         targets: 'last 2 version'
+            //       }
+            //     ]
+            //   ]
+            // }
+          }
+        ]
       }
     ]
   },
+  mode:'development',
   plugins: [
     new HtmlWebpackPlugin({
       template: "./public/index.html",
       title: "处理CSS"
     }),
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
+    new DefinePlugin({
+      //注意定义变量时的值
+      BASE_URL: JSON.stringify("./ico/") // 或 '"./"'
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: "public",
+          globOptions:{
+            ignore: [
+              "**/index.html"
+            ]
+          },
+          to: 'ico'
+        }
+      ]
+    })
   ]
 }

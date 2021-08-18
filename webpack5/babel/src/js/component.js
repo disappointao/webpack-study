@@ -5,6 +5,9 @@ import "../css/b.scss";
 import sun from "../assets/img/sun.png"
 const sun2 = require("../assets/img/sun2.jpg")
 
+const a = BASE_URL
+console.log(a)
+
 function component() {
   const element = document.createElement("div");
 

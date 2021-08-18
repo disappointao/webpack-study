@@ -18,7 +18,7 @@ function component() {
   const img = new Image()
   img.src = sun
   const img2 =new Image()
-  img2.src = sun2.default
+  img2.src = sun2
   element.appendChild(img)
   element.append(img2)
 
