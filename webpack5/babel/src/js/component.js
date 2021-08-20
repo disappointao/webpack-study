@@ -19,7 +19,7 @@ function component() {
   const img2 =new Image()
   img2.src = sun2
   element.appendChild(img)
-  element.append(img2)
+  element.appendChild(img2)
 
   // 创建一个i元素, 设置一个字体
   const iEl = document.createElement("i");

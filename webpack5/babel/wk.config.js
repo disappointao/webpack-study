@@ -7,6 +7,7 @@ module.exports = {
   // entry: ["@babel/polyfill","./src/main.js"],
   entry: "./src/main.js",
   devtool: "source-map",
+  mode:'production',
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "./dist")
@@ -125,7 +126,6 @@ module.exports = {
       }
     ]
   },
-  mode:'development',
   plugins: [
     new HtmlWebpackPlugin({
       template: "./public/index.html",

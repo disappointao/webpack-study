@@ -5,22 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config wk.config.js"
+    "build": "webpack --config wk.config.js",
+    "compiler": "babel src/main.js --out-dir babelCompiler "
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.14.8",
     "@babel/core": "^7.15.0",
     "@babel/plugin-transform-runtime": "^7.15.0",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-react": "^7.14.5",
-    "@babel/runtime-corejs3": "^7.15.3",
     "autoprefixer": "^10.3.1",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "*",
     "copy-webpack-plugin": "^9.0.1",
-    "core-js": "^2.6.12",
+    "core-js": "^3.16.2",
     "css-loader": "^5.2.6",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
@@ -38,6 +39,8 @@
     "webpack-cli": "^4.7.2"
   },
   "dependencies": {
+    "@babel/runtime": "^7.15.3",
+    "@babel/runtime-corejs3": "^7.15.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
